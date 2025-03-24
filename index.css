@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    margin-left: 75vh;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 10vh;
+    padding: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;
+    border-radius: 20px;
+}
