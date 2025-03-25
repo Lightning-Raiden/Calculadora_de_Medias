@@ -17,17 +17,21 @@ for(let i = 0; i < nota.length; i++) {
 
 let media = soma / nota.length;
 
-if(media >=7) {
-    alert(aluno + " foi aprovado! Sua média foi: " + media);
-} else {
-    alert("Reprovado! Sua média foi: " + media);
-}
-
 let mapaAluno = aluno;
 let mapaNota = nota.map(x => x);
 
-document.writeln(mapaAluno);
-document.writeln(mapaNota, media);
+document.writeln("Nome do aluno: " + mapaAluno + "<br/>");
+document.writeln("Notas do aluno: " + mapaNota + "<br/>");
+document.writeln("Média do aluno: " + media + "<br/><br/>");
+document.writeln("");
+
+if(media >=7) {
+    document.writeln(aluno + " foi aprovado! Sua média foi: " + media + "<br/><br/>");
+} else {
+    document.writeln("Reprovado! Sua média foi: " + media + "<br/><br/>");
+}
+
+document.writeln("=======================================" + "<br/><br/>");
 
 while(confirm("Quer adicionar mais alunos?") == true) {
     let aluno = prompt("Informe o nome do aluno:");
@@ -49,15 +53,19 @@ while(confirm("Quer adicionar mais alunos?") == true) {
 
     let media = soma / nota.length;
 
-    if(media >=7) {
-        alert(aluno + " foi aprovado! Sua média foi: " + media);
-    } else {
-        alert("Reprovado! Sua média foi: " + media);
-    }
-
     let mapaAluno = aluno;
     let mapaNota = nota.map(x => x);
 
-    document.writeln(mapaAluno);
-    document.writeln(mapaNota, media);
+    document.writeln("Nome do aluno: " + mapaAluno + "<br/>");
+    document.writeln("Notas do aluno: " + mapaNota + "<br/>");
+    document.writeln("Média do aluno: " + media + "<br/><br/>");
+    document.writeln("");
+    
+    if(media >=7) {
+        document.writeln(aluno + " foi aprovado! Sua média foi: " + media + "<br/><br/>");
+    } else {
+        document.writeln("Reprovado! Sua média foi: " + media + "<br/><br/>");
+    }
+    
+    document.writeln("=======================================" + "<br/><br/>");
 }
