@@ -26,9 +26,9 @@ document.writeln("Média do aluno: " + media + "<br/><br/>");
 document.writeln("");
 
 if(media >=7) {
-    document.writeln(aluno + " foi aprovado! Sua média foi: " + media + "<br/><br/>");
+    document.writeln(aluno + " foi aprovado!" + "<br/><br/>");
 } else {
-    document.writeln("Reprovado! Sua média foi: " + media + "<br/><br/>");
+    document.writeln("Aluno reprovado!" + "<br/><br/>");
 }
 
 document.writeln("=======================================" + "<br/><br/>");
