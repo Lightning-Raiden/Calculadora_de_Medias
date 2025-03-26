@@ -11,9 +11,7 @@ while(confirm("Quer adicionar mais notas?") == true) {
 
 let soma = 0;
 
-for(let i = 0; i < nota.length; i++) {
-    soma += nota[i];
-}
+let soma = nota.reduce((diariodenotas, nota) => diariodenotas + nota)
 
 let media = soma / nota.length;
 
@@ -26,10 +24,10 @@ document.writeln("Média do aluno: " + media + "<br/><br/>");
 document.writeln("");
 
 if(media >=7) {
-    document.writeln(aluno + " foi aprovado!" + "<br/><br/>");
-} else {
-    document.writeln("Aluno reprovado!" + "<br/><br/>");
-}
+        document.writeln(aluno + " aprovado! A média foi: " + media + "<br/><br/>");
+    } else {
+        document.writeln(aluno + " reprovado! A média foi: " + media + "<br/><br/>");
+    }
 
 document.writeln("=======================================" + "<br/><br/>");
 
@@ -47,9 +45,7 @@ while(confirm("Quer adicionar mais alunos?") == true) {
 
     let soma = 0;
 
-    for(let i = 0; i < nota.length; i++) {
-        soma += nota[i];
-    }
+    let soma = nota.reduce((diariodenotas, nota) => diariodenotas + nota)
 
     let media = soma / nota.length;
 
@@ -62,9 +58,9 @@ while(confirm("Quer adicionar mais alunos?") == true) {
     document.writeln("");
     
     if(media >=7) {
-        document.writeln(aluno + " foi aprovado! Sua média foi: " + media + "<br/><br/>");
+        document.writeln(aluno + " aprovado! A média foi: " + media + "<br/><br/>");
     } else {
-        document.writeln("Reprovado! Sua média foi: " + media + "<br/><br/>");
+        document.writeln(aluno + " reprovado! A média foi: " + media + "<br/><br/>");
     }
     
     document.writeln("=======================================" + "<br/><br/>");
