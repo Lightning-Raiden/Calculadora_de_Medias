@@ -3,12 +3,8 @@ Desenvolver uma calculadora que recebe notas de alunos e calcula a média,
 informando se o aluno foi aprovado ou reprovado. 
 */
 
-let aluno = prompt("Informe o nome do aluno:");
-
 // Usar array para armazenar as notas. 
 let nota = [];
-
-let promptNota = prompt("Informe a nota do aluno:");
 
 let checkNum = true;
 
@@ -22,6 +18,8 @@ let mapaAluno;
 
 let mapaNota;
 
+let aluno = prompt("Informe o nome do aluno:");
+
 while(aluno === ""){
     alert("Nome não pode ser vazio!");
     aluno = prompt("Informe o nome do aluno:");
@@ -30,12 +28,14 @@ while(aluno === ""){
 /*
 Estruturas de repetição para permitir a entrada de várias notas.
 */
+let promptNota = prompt("Informe a nota do aluno:");
+
 while(checkNum) {
-    let notaNum = parseInt(promptNota);
+    let notaNum = parseFloat(promptNota);
 
     if(isNaN(notaNum)) {
         alert("Erro: nota não pode ser vazia!")
-        promptNota = parseInt(prompt("Informe a nota do aluno:"));
+        promptNota = parseFloat(prompt("Informe a nota do aluno:"));
     } else {
         nota.push(notaNum);
         checkNum = false;
@@ -44,14 +44,14 @@ while(checkNum) {
 
 while(confirm("Quer adicionar mais notas?") == true) {
     checkNum2 = true;
-    let promptNota2 = parseInt(prompt("Informe a nota do aluno:"));
+    let promptNota2 = parseFloat(prompt("Informe a nota do aluno:"));
     
     while(checkNum2){
-        let notaNum2 = parseInt(promptNota2);
+        let notaNum2 = parseFloat(promptNota2);
     
         if(isNaN(notaNum2)) {
             alert("Erro: nota não pode ser vazia!")
-            promptNota2 = parseInt(prompt("Informe a nota do aluno:"));
+            promptNota2 = parseFloat(prompt("Informe a nota do aluno:"));
         } else {
             nota.push(notaNum2);
             checkNum2 = false;
@@ -116,11 +116,11 @@ while(confirm("Quer adicionar mais alunos?") == true) {
     Estruturas de repetição para permitir a entrada de várias notas.
     */
     while(checkNum) {
-        let notaNum = parseInt(promptNota);
+        let notaNum = parseFloat(promptNota);
 
         if(isNaN(notaNum)) {
             alert("Erro: nota não pode ser vazia!")
-            promptNota = parseInt(prompt("Informe a nota do aluno:"));
+            promptNota = parseFloat(prompt("Informe a nota do aluno:"));
         } else {
             nota.push(notaNum);
             checkNum = false;
@@ -129,14 +129,14 @@ while(confirm("Quer adicionar mais alunos?") == true) {
 
     while(confirm("Quer adicionar mais notas?") == true) {
         checkNum2 = true;
-        let promptNota2 = parseInt(prompt("Informe a nota do aluno:"));
+        let promptNota2 = parseFloat(prompt("Informe a nota do aluno:"));
         
         while(checkNum2){
-            let notaNum2 = parseInt(promptNota2);
+            let notaNum2 = parseFloat(promptNota2);
         
             if(isNaN(notaNum2)) {
                 alert("Erro: nota não pode ser vazia!")
-                promptNota2 = parseInt(prompt("Informe a nota do aluno:"));
+                promptNota2 = parseFloat(prompt("Informe a nota do aluno:"));
             } else {
                 nota.push(notaNum2);
                 checkNum2 = false;

@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: rgb(66, 94, 126);
     margin-left: 65vh;
     display: inline-block;
     align-items: center;
@@ -25,6 +26,7 @@ body {
 }
 
 .container {
+    background-color: rgb(255, 255, 255);
     margin-top: 10vh;
     padding: 10vh;
     display: flex;
