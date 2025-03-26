@@ -11,7 +11,7 @@ while(confirm("Quer adicionar mais notas?") == true) {
 
 let soma = 0;
 
-let soma = nota.reduce((diariodenotas, nota) => diariodenotas + nota)
+soma = nota.reduce((diariodenotas, nota) => diariodenotas + nota)
 
 let media = soma / nota.length;
 
