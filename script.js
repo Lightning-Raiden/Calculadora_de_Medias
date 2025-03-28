@@ -67,8 +67,7 @@ mapaAluno = aluno;
 mapaNota = nota.map(x => x);
 
 document.writeln("Nome do aluno: " + mapaAluno + "<br/>");
-document.writeln("Notas do aluno: " + mapaNota + "<br/>");
-document.writeln("Média do aluno: " + media + "<br/><br/>");
+document.writeln("Notas do aluno: " + mapaNota + "<br/><br/>");
 document.writeln("");
 
 /* 
@@ -152,8 +151,7 @@ while(confirm("Quer adicionar mais alunos?") == true) {
     mapaNota = nota.map(x => x);
 
     document.writeln("Nome do aluno: " + mapaAluno + "<br/>");
-    document.writeln("Notas do aluno: " + mapaNota + "<br/>");
-    document.writeln("Média do aluno: " + media + "<br/><br/>");
+    document.writeln("Notas do aluno: " + mapaNota + "<br/><br/>");
     document.writeln("");
 
     /* 
